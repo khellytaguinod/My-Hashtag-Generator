@@ -3,6 +3,7 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
@@ -10,5 +11,16 @@ html {
   }
 
 .container {
-	background-color: red;
+	//background-color: red;
+	height: auto;
+	background-color: green;
+}
+
+.display-1 {
+	//color: green;
+	font-size: 15em;
+}
+
+.test {
+	background-color: #DCDCDC;
 }
