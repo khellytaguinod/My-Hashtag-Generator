@@ -1,32 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif; }
-
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit; }
-
-.container {
-  height: auto; }
-
-.display-1 {
-  font-size: 15em; }
-
-.test {
-  background-color: #DCDCDC; }
-
-.card-block {
-  background-color: #F5F5F5; }
-
 @media (max-width: 575px) {
   * {
-    color: red;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500; }
+    padding: 1%; }
 
   .title {
     font-weight: 700;
@@ -36,6 +10,27 @@ html {
     font-size: 100%; }
 
   fieldset {
-    font-size: 80%; } }
+    font-size: 70%; }
+
+  .btn, .btn-group {
+    width: 100%; } }
+.container {
+  margin-top: 1%; }
+
+.display-1 {
+  font-size: 15em; }
+
+#rightSide {
+  background-color: #DCDCDC; }
+
+.card {
+  overflow-y: auto;
+  min-width: 100%;
+  height: 150px; }
+  .card .card-block {
+    background-color: #F5F5F5; }
+
+.title {
+  font-weight: 700; }
 
 /*# sourceMappingURL=main.css.map */

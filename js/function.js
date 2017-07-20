@@ -14,6 +14,7 @@ let removePunctuations = function(input) {
       // display results
       document.getElementById("results").innerHTML = results;
     };
+    
     let handleClick = function() {
       document.getElementById("message").placeholder = "";
     }

@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Hashtag Generator</title>
-
     <!-- bootstrap 4 CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <!-- bootstrap 4 CDN -->
@@ -18,7 +17,7 @@
             <div class="col-md-3">
                 <h1 class="display-1 text-center">#</h1>
             </div>
-            <div class="col-md-9 test">
+            <div class="col-md-9" id="rightSide">
                 <div class="row">
                     <div class="col-md-12">
                         <form>
@@ -28,25 +27,20 @@
                                 <button type="button" class="btn btn-secondary" onclick="generateHashtag()">Generate my hashtags!</button>
                             </fieldset>
                         </form>
-
                     </div>
                     <div class="col-md-12">
-                        <form>
-                            <fieldset>
-                                <legend class="title">Your Hashtags</legend>
-                                <div class="card card-outline-secondary mb-3 text-center">
-                                    <div class="card-block">
-                                        <blockquote class="card-blockquote" id="results"> "It's lonely here. Generate some hashtags!"
-                                        </blockquote>
-                                    </div>
-                                </div>
-                            </fieldset>
-                        </form>
+                        <legend class="title">Your Hashtags</legend>
+                        <div class="card card-outline-secondary mb-3 text-center">
+                            <div class="card-block">
+                            <p class="lead" id="results"> It's lonely here. Generate some hashtags!</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-<script src="js/function.js"></script>
+    <script src="js/function.js"></script>
 </body>
+
 </html>
