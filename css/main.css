@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -22,7 +24,13 @@ html {
 
 @media (max-width: 575px) {
   * {
-    color: red; }
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500; }
+
+  .title {
+    font-weight: 700;
+    font-size: 150%; }
 
   .form-control {
     font-size: 100%; }
