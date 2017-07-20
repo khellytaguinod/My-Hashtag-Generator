@@ -9,13 +9,25 @@ html {
   box-sizing: inherit; }
 
 .container {
-  height: auto;
-  background-color: green; }
+  height: auto; }
 
 .display-1 {
   font-size: 15em; }
 
 .test {
   background-color: #DCDCDC; }
+
+.card-block {
+  background-color: #F5F5F5; }
+
+@media (max-width: 575px) {
+  * {
+    color: red; }
+
+  .form-control {
+    font-size: 100%; }
+
+  fieldset {
+    font-size: 80%; } }
 
 /*# sourceMappingURL=main.css.map */

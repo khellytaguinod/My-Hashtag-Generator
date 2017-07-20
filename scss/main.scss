@@ -13,7 +13,8 @@ html {
 .container {
 	//background-color: red;
 	height: auto;
-	background-color: green;
+	//background-color: green;
+	//padding: 0px 10px 5px 10px;
 }
 
 .display-1 {
@@ -24,3 +25,33 @@ html {
 .test {
 	background-color: #DCDCDC;
 }
+
+.card-block {
+	background-color: #F5F5F5;
+}
+
+
+ // Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) { 
+
+		* {
+			color: red;	
+		}
+    
+		.form-control {
+			font-size: 100%;
+		}
+
+	    fieldset {
+	    	font-size: 80%;
+	    }
+ }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) {  }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) {  }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) {  }

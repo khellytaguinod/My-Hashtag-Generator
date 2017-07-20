@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Hashtag Generator</title>
-	
-	<!-- bootstrap 4 CDN -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-	<!-- bootstrap 4 CDN -->
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hashtag Generator</title>
+
+    <!-- bootstrap 4 CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- bootstrap 4 CDN -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 
 </head>
-<body>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-3">
-				<h1 class="display-1 text-center">#</h1>
-			</div>
-			<div class="col-md-9 test">
-				<div class="row">
-					<div class="col-md-12">
-						<form>
-						 <fieldset>
-						  <legend>My Awesome Hashtag Generator</legend>
-						   <input id="message" type="text" class="form-control input-lg"
-			                onClick="handleClick()"
-			                onKeypress="handleKeyPress(event)"
-			                onBlur="handleBlur(event)"
-			                placeholder="Enter your message or paste some text here.">
-              			  <button type="button" class="btn btn-secondary" onclick="generateHashtag()">Generate my hashtags!</button>
-						 </fieldset>
-						</form>
 
-					</div>
-					<div class="col-md-12">
-						<form>
-						 <fieldset>
-						  <legend>Your Hashtags</legend>
-						  
-						  <textarea class="form-control" id="results" placeholder="It's lonely here. Generate some hashtags!" readonly></textarea>
-						 </fieldset>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h1 class="display-1 text-center">#</h1>
+            </div>
+            <div class="col-md-9 test">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form>
+                            <fieldset>
+                                <legend>My Awesome Hashtag Generator</legend>
+                                <input id="message" type="text" class="form-control input-lg" onClick="handleClick()" onKeypress="handleKeyPress(event)" onBlur="handleBlur(event)" placeholder="Enter your message or paste some text here.">
+                                <button type="button" class="btn btn-secondary" onclick="generateHashtag()">Generate my hashtags!</button>
+                            </fieldset>
+                        </form>
+
+                    </div>
+                    <div class="col-md-12">
+                        <form>
+                            <fieldset>
+                                <legend>Your Hashtags</legend>
+                                <div class="card card-outline-secondary mb-3 text-center">
+                                    <div class="card-block">
+                                        <blockquote class="card-blockquote" id="results"> "It's lonely here. Generate some hashtags!"
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 <script type="text/javascript">
 	let removePunctuations = function(input) {
       return input.replace(/[&\/\\#,+()$~%.'":;*?<>{}\^\@\-\=\`\!]/g, '');
