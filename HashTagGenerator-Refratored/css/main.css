@@ -2,6 +2,12 @@
   * {
     padding: 1%; }
 
+  fieldset {
+    font-size: 70%; }
+
+  h1 {
+    font-size: 150px !important; }
+
   .title {
     font-weight: 700;
     font-size: 150%; }
@@ -9,11 +15,16 @@
   .form-control {
     font-size: 100%; }
 
-  fieldset {
-    font-size: 70%; }
-
   .btn, .btn-group {
     width: 100%; } }
+@media (min-width: 768px) {
+  .btn, .btn-group {
+    width: 100%;
+    margin-top: 3%; } }
+@media (min-width: 992px) {
+  .btn, .btn-group {
+    width: 30%;
+    margin-top: 2%; } }
 .container {
   margin-top: 1%; }
 

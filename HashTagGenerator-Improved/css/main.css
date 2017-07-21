@@ -23,10 +23,6 @@ h1 {
 
   .input-lg {
     font-size: 115%; } }
-@media (max-width: 575px) {
-  .btn, .btn-group {
-    width: 100%;
-    margin-top: 3%; } }
 @media (min-width: 768px) {
   .btn, .btn-group {
     width: 100%;
