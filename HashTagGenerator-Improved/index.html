@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>My # Generator </title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	
-	<!--- bootstrap 4 CDN -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-
-	<link rel="stylesheet" href="css/main.css">
+    <title>My # Generator </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--- bootstrap 4 CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 offset-md-3">
-				<h1 class="text-center"> 			<span
-				     class="txt-rotate"
-				     data-period="2000"
-				     data-rotate='[ "#hashtags", "#love", "#selfie", "#foodie", "#bootstrap4", "#whohoo!" ]'></span>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="text-center">
+                <span class="txt-rotate" data-period="2000" data-rotate='[ "#hashtags", "#love", "#selfie", "#foodie", "#bootstrap4", "#whohoo!" ]'></span>
 				 </h1><br>
-				<p class="lead text-center">My Awesome Hashtags Generator is a one-page for making hashtags. Enter your message and shazam!</p>
-			</div>
-			<div class="col-md-6 offset-md-3">
-				   <form>
-                            <fieldset>
-                          
-                                <input id="message" type="text" class="form-control input-lg" onClick="handleClick()" onKeypress="handleKeyPress(event)" onBlur="handleBlur(event)" placeholder="Enter your message or paste some text here.">
-                                <button type="button" class="btn btn-primary" onclick="generateHashtag()">Generate my #tags!</button>
-                            </fieldset>
-                        </form>
-		</div>
-		<div class="row">
-			
-		</div>
-	</div>
-	<script type="text/javascript" src="js/typing.js"></script>
-	<script type="text/javascript" src="js/functions.js"></script>
+                <p class="lead text-center">My Awesome Hashtags Generator is a one-page for making hashtags. Enter your message and shazam!</p>
+            </div>
+            <div class="col-md-6 offset-md-3">
+                <form>
+                    <fieldset>
+                        <input id="message" type="text" class="form-control input-lg" onClick="handleClick()" onKeypress="handleKeyPress(event)" onBlur="handleBlur(event)" placeholder="Enter your message or paste some text here.">
+                        <button type="button" class="btn btn-primary" onclick="generateHashtag()">Generate my #tags!</button>
+                    </fieldset>
+                </form>
+                <br>
+                <div class="card card-outline-secondary mb-3 text-center">
+                    <div class="card-block">
+                        <p class="lead" id="results"> The magic happens here </p>
+                    </div>
+                </div>
+            </div>
+                <div class="col-md-12 text-center">
+                    <small class="text-muted">Version 0.0.2</small>
+                </div>
+        </div>
+        <script type="text/javascript" src="js/typing.js"></script>
+        <script type="text/javascript" src="js/functions.js"></script>
 </body>
+
 </html>
